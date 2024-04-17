@@ -7,7 +7,7 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>digiFILES</title>
+    <title>ISUC FMS</title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -89,11 +89,13 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
                 </li>
             </ul>
             <div class="sidebar-footer">
-                <a href="http://localhost/logout"  method="get" class="sidebar-link"><?//=site_url('logout');?>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#logoutMod" class="sidebar-link">
                     <i class="lni lni-exit"></i>
                     <span>Logout</span>
                 </a>
             </div>
+
+           
         </aside>
         <div class="main">
             <nav class="navbar navbar-expand px-4 py-3">
@@ -154,6 +156,29 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
             </footer>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="logoutMod" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="logoutModLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <form class="user"  action="logout" method="get">
+        <div class="modal-content">
+            <div class="modal-header text-white" style="background-color:#0E2238;"><?//=site_url('logout');?>
+                <h5 class="modal-title" id="logoutModLabel">ISUC FMS</h5>
+                <button type="button" class="btn-close" style="color:#FFFFFF;" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to log out?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                <button type="submit" class="btn btn-primary">Yes</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
