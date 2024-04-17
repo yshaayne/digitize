@@ -1,5 +1,8 @@
+<?php
+if(session()->get('loggedInUser')){}else{redirect('login');}
+?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -86,7 +89,7 @@
                 </li>
             </ul>
             <div class="sidebar-footer">
-                <a href="#" class="sidebar-link">
+                <a href="logout" class="sidebar-link">
                     <i class="lni lni-exit"></i>
                     <span>Logout</span>
                 </a>

@@ -1,0 +1,6 @@
+CRITICAL - 2024-04-17 01:08:26 --> Error: Call to a member function save() on null
+in APPPATH\Controllers\LoginCon.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginCon->loginAccount()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginCon))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
