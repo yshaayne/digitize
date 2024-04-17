@@ -31,6 +31,26 @@ class Database extends Config
         'hostname'     => 'localhost',
         'username'     => 'root',
         'password'     => '1ct4dm1n',
+        'database'     => 'fms',
+        'DBDriver'     => 'MySQLi',
+        'DBPrefix'     => '',
+        'pConnect'     => false,
+        'DBDebug'      => true,
+        'charset'      => 'utf8',
+        'DBCollat'     => 'utf8_general_ci',
+        'swapPre'      => '',
+        'encrypt'      => false,
+        'compress'     => false,
+        'strictOn'     => false,
+        'failover'     => [],
+        'port'         => 1978,
+        'numberNative' => false,
+    ];
+    public array $account = [
+        'DSN'          => '',
+        'hostname'     => 'localhost',
+        'username'     => 'root',
+        'password'     => '1ct4dm1n',
         'database'     => 'hrmisisuc',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
@@ -46,7 +66,6 @@ class Database extends Config
         'port'         => 1978,
         'numberNative' => false,
     ];
-
     /**
      * This database connection is used when
      * running PHPUnit database tests.

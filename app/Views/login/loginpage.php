@@ -47,6 +47,9 @@ if(session()->get('loggedInUser')){redirect('/');}else{}
                                         else if(!empty(session()->getFlashData('unactivated'))){
                                             echo session()->getFlashData('unactivated');
                                         }
+                                        else if(!empty(session()->getFlashData('logout'))){
+                                            echo session()->getFlashData('logout');
+                                        }
                                         else{ } 
                                         ?>
                                     </span>

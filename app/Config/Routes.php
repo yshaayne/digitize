@@ -11,6 +11,9 @@ $routes->get('/', 'DashboardCon::index');
 
 //logged in user routes
 $routes->group('',['filter'=> 'AutoCheck'],function($routes){
+    $routes->get('logout','LoginCon::logout');
+
+    
     $routes->get('home', 'DashboardCon::index2');
     $routes->get('my-profile', 'Dashboard::profile');
     $routes->get('change-password', 'Dashboard::changepass');
@@ -137,6 +140,6 @@ $routes->group('',['filter'=> 'AutoCheck'],function($routes){
 
 $routes->group('',['filter'=> 'AlreadyLoggedIn'],function($routes){
     $routes->get('login','LoginCon::index');
-    $routes->post('/logincheck','LoginCon::loginAccount');
-    $routes->get('/logout','LoginCon::logout');
+    $routes->post('logincheck','LoginCon::loginAccount');
+   
 });

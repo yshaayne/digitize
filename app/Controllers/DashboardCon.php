@@ -6,7 +6,7 @@ use App\Controllers\BaseController;
 use App\Libraries\Hash;
 use App\Models\User;
 use App\Models\EmploymentDetailsMod;
-// use App\Models\SystemLogsMod;
+use App\Models\SystemLogsMod;
 
 class DashboardCon extends BaseController
 {
@@ -32,5 +32,5 @@ class DashboardCon extends BaseController
             return redirect()->to('login')->with('fail','Please login to access the application');
         } 
     }
-    
+
 }

@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class EmploymentDetailsMod extends Model
 {
-    protected $DBGroup          = 'default';
+    protected $DBGroup          = 'account';
     protected $table            = 'tbl-employee';
     protected $primaryKey       = 'isu';
     protected $useAutoIncrement = true;

@@ -21,7 +21,7 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
                     <i class="lni lni-grid-alt"></i>
                 </button>
                 <div class="sidebar-logo">
-                    <a href="#">digiFILES</a>
+                    <a href="#">ISUC FMS</a>
                 </div>
             </div>
             <ul class="sidebar-nav">
@@ -89,7 +89,7 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
                 </li>
             </ul>
             <div class="sidebar-footer">
-                <a href="logout" class="sidebar-link">
+                <a href="http://localhost/logout"  method="get" class="sidebar-link"><?//=site_url('logout');?>
                     <i class="lni lni-exit"></i>
                     <span>Logout</span>
                 </a>
@@ -133,7 +133,7 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
                     <div class="row text-body-secondary">
                         <div class="col-6 text-start ">
                             <a class="text-body-secondary" href=" #">
-                                <strong>digiFILES</strong>
+                                <strong>ISUC FMS</strong>
                             </a>
                         </div>
                         <div class="col-6 text-end text-body-secondary d-none d-md-block">

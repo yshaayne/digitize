@@ -6,7 +6,7 @@
     // $db_ticket = \Config\Database::connect("ticket");
     //====================================================================================
     ?>
-        <h3 class="fw-bold fs-4 mb-3">ISUC DIGITAL FILES</h3>
+        <h3 class="fw-bold fs-4 mb-3">ISUC FILE MANAGEMENT SYSTEM</h3>
         <div class="row">
             <div class="col-12 col-md-4 ">
                 <div class="card border-0">
