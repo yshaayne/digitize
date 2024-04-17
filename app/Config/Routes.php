@@ -12,8 +12,19 @@ $routes->get('/', 'DashboardCon::index');
 //logged in user routes
 $routes->group('',['filter'=> 'AutoCheck'],function($routes){
     $routes->get('logout','LoginCon::logout');
+    #########################################################################################################
+    # Document ## Document ## Document ## Document ## Document ## Document ## Document ## Document #
+    #########################################################################################################
+    $routes->get('document-setup', 'DocumentCon::index');
+    $routes->get('document-load', 'DocumentCon::load');
+    $routes->get('document-load2', 'DocumentCon::load2');
+    $routes->post('document-add', 'DocumentCon::insert');
+    $routes->post('document-details', 'DocumentCon::view');
+    $routes->post('document-edit', 'DocumentCon::edit');
+    $routes->post('document-update', 'DocumentCon::update');
+    $routes->post('document-delete', 'DocumentCon::delete');
 
-    
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     $routes->get('home', 'DashboardCon::index2');
     $routes->get('my-profile', 'Dashboard::profile');
     $routes->get('change-password', 'Dashboard::changepass');
@@ -67,18 +78,7 @@ $routes->group('',['filter'=> 'AutoCheck'],function($routes){
     $routes->post('asset-history', 'AssetCon::history');
     $routes->post('asset-get-asset', 'AssetCon::get_asset');
     $routes->post('asset-peripherals', 'AssetCon::peripherals');
-    #########################################################################################################
-    #SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER
-    #########################################################################################################
-    $routes->get('supplier-setup', 'SupplierCon::index');
-    $routes->get('supplier-load', 'SupplierCon::load');
-    $routes->get('supplier-load2', 'SupplierCon::load2');
-    $routes->post('supplier-add', 'SupplierCon::insert');
-    $routes->post('supplier-details', 'SupplierCon::view');
-    $routes->post('supplier-edit', 'SupplierCon::edit');
-    $routes->post('supplier-update', 'SupplierCon::update');
-    $routes->post('supplier-delete', 'SupplierCon::delete');
-
+    
     #########################################################################################################
     #SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER#SUPPLIER
     #########################################################################################################

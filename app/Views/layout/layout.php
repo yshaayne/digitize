@@ -1,5 +1,7 @@
 <?php
 if(session()->get('loggedInUser')){}else{redirect('login');}
+date_default_timezone_set('Asia/Hong_Kong');
+echo strtotime("2024-04-17 07:59:00");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,8 +14,30 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="<?=base_url('assets');?>/style.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="<?=base_url('assets');?>/img/isu.ico">
+    <link rel="stylesheet" href="<?=base_url('assets');?>/datatables/5/dataTables.bootstrap5.css">
+    <!-- <link rel="stylesheet" href="<?//=base_url('assets');?>/datatables/dataTables.bootstrap4.min.css"> -->
+    <script src="<?=base_url('assets');?>/jquery/jquery.min.js"></script>
+    <script src="<?=base_url('assets');?>/select/select2.min.js"></script>
+    <link href="<?=base_url('assets');?>/select/select2.min.css" rel="stylesheet" />
+     <!-- Rich Text editor  -->
+    <link rel="stylesheet" href="<?=base_url('assets');?>/richtexteditor/rte_theme_default.css" />
+    <script type="text/javascript" src="<?=base_url('assets');?>/richtexteditor/rte.js"></script>
+    <script type="text/javascript" src='<?=base_url('assets');?>/richtexteditor/plugins/all_plugins.js'></script>
+
+    <style>
+        .modal-dialog-bottom {
+            position: fixed !important;
+            bottom: 0 !important;
+            left: 0% !important;
+            right: 0% !important;
+            margin-bottom: 0 !important;   
+        } 
+
+    </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <div class="wrapper">
         <aside id="sidebar">
             <div class="d-flex">
@@ -28,16 +52,34 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-user"></i>
-                        <span>Profile</span>
+                        <span >Profile</span>
                     </a>
                 </li>
+               
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="lni lni-cog"></i>
+                        <span>Setup</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Department</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">link 1</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="<?=site_url("document-setup");?>" class="sidebar-link">
                         <i class="lni lni-agenda"></i>
-                        <span>Task</span>
+                        <span>File Manager</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+
+                <!-- <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                         data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
                         <i class="lni lni-protection"></i>
@@ -51,8 +93,8 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
                             <a href="#" class="sidebar-link">Register</a>
                         </li>
                     </ul>
-                </li>
-                <li class="sidebar-item">
+                </li> -->
+                <!-- <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                         data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
                         <i class="lni lni-layout"></i>
@@ -74,19 +116,19 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
                             </ul>
                         </li>
                     </ul>
-                </li>
-                <li class="sidebar-item">
+                </li> -->
+                <!-- <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-popup"></i>
                         <span>Notification</span>
                     </a>
-                </li>
-                <li class="sidebar-item">
+                </li> -->
+                <!-- <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-cog"></i>
                         <span>Setting</span>
                     </a>
-                </li>
+                </li> -->
             </ul>
             <div class="sidebar-footer">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#logoutMod" class="sidebar-link">
@@ -102,7 +144,7 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
                 <form action="#" class="d-none d-sm-inline-block">
 
                 </form>
-                
+                <h1 class="fw-bold fs-4 mb-3">ISUC FILE MANAGEMENT SYSTEM</h1>
                 <div class="navbar-collapse collapse">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
@@ -114,9 +156,9 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
                             </div> -->
                             <ul class="dropdown-menu dropdown-menu-end rounded" >
                                
-                                <li><a class="dropdown-item" href="index.html">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="/">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Password</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#logoutMod" href="#">Logout</a></li>
                               </ul>
                         </li>
                     </ul>
@@ -130,7 +172,7 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
                     </div>
                 </div>
             </main>
-            <footer class="footer">
+            <footer class="mt-auto footer">
                 <div class="container-fluid">
                     <div class="row text-body-secondary">
                         <div class="col-6 text-start ">
@@ -182,8 +224,17 @@ if(session()->get('loggedInUser')){}else{redirect('login');}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="<?=base_url('assets');?>/datatables/5/dataTables.js"></script>
+    <script src="<?=base_url('assets');?>/datatables/5/dataTables.bootstrap5.js"></script>
+
     <script src="<?=base_url('assets');?>/script.js"></script>
     <?=$this->renderSection('index-script'); ?>
+    <?=$this->renderSection('document-script'); ?>
+
+    <script>
+        var editor1 = new RichTextEditor("#inp_editor1");
+    </script>
+
 </body>
 
 </html>
