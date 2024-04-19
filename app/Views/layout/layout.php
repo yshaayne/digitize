@@ -1,7 +1,7 @@
 <?php
 if(session()->get('loggedInUser')){}else{redirect('login');}
 date_default_timezone_set('Asia/Hong_Kong');
-echo strtotime("2024-04-17 07:59:00");
+// echo strtotime("2024-04-17 07:59:00");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,11 +21,11 @@ echo strtotime("2024-04-17 07:59:00");
     <script src="<?=base_url('assets');?>/jquery/jquery.min.js"></script>
     <script src="<?=base_url('assets');?>/select/select2.min.js"></script>
     <link href="<?=base_url('assets');?>/select/select2.min.css" rel="stylesheet" />
-     <!-- Rich Text editor  -->
-    <link rel="stylesheet" href="<?=base_url('assets');?>/richtexteditor/rte_theme_default.css" />
-    <script type="text/javascript" src="<?=base_url('assets');?>/richtexteditor/rte.js"></script>
-    <script type="text/javascript" src='<?=base_url('assets');?>/richtexteditor/plugins/all_plugins.js'></script>
-
+    <!-- CKEditor 5 -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script> 
+    <!-- CKEditor 4 -->
+    <!-- <script src="https://cdn.ckeditor.com/4.24.0-lts/standard/ckeditor.js"></script> -->
+    
     <style>
         .modal-dialog-bottom {
             position: fixed !important;
@@ -73,7 +73,7 @@ echo strtotime("2024-04-17 07:59:00");
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="<?=site_url("document-setup");?>" class="sidebar-link">
+                    <a href="<?=site_url("/");?>" class="sidebar-link">
                         <i class="lni lni-agenda"></i>
                         <span>File Manager</span>
                     </a>
@@ -232,9 +232,39 @@ echo strtotime("2024-04-17 07:59:00");
     <?=$this->renderSection('document-script'); ?>
 
     <script>
-        var editor1 = new RichTextEditor("#inp_editor1");
+            //CKEditor 5
+            ClassicEditor
+                    .create( document.querySelector( '#editor1' ) )
+                    .then( editor => {
+                            console.log( editor );
+                    } )
+                    .catch( error => {
+                            // console.error( error );
+                    } );
+            //CKEditor 4   
+            //CKEDITOR.replace( 'editor1' );
     </script>
+    <style>
+        /* #uploadForm label {
+            margin: 2px;
+            font-size: 1em;
+        } */
 
+        #progress-bar {
+            background-color: #12CC1A;
+            color: #FFFFFF;
+            width: 0%;
+            -webkit-transition: width .3s;
+            -moz-transition: width .3s;
+            transition: width .3s;
+            border-radius: 5px;
+        }
+
+        #targetLayer {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </body>
 
 </html>

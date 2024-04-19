@@ -33,11 +33,11 @@ class LoginCon extends BaseController
             $dbUpass=$userInfo['pass'];
             $checkPassword = Hash::checkEncypt($pass,$dbUpass);
             if(!$checkPassword ){
-                $Data_system_logs=[
+                $Data_login_logs=[
                     'emp_id'=>$userInfo['emp_id'],
                     'logs'=>'attemp to login : invalid password '.$ipaddress,
                     ];
-                $SystemLogsMod->save($Data_system_logs);
+                $SystemLogsMod->save($Data_login_logs);
                 session()->setFlashdata('fail','Incorect Password');
                 return redirect()->to('login');
             }
@@ -51,11 +51,11 @@ class LoginCon extends BaseController
                         session()->set('loggedInEmp_id',$userInfo['emp_id']);
                         session()->set('loggedInAccessLevel',$userInfo['accesslevel']);
                         session()->set('loggedInEmp_Status',$employeeInfo['status']);
-                        $Data_system_logs=[
+                        $Data_login_logs=[
                             'emp_id'=>$userInfo['emp_id'],
                             'logs'=>'login '.$ipaddress,
                         ];
-                        $SystemLogsMod->save($Data_system_logs);
+                        $SystemLogsMod->save($Data_login_logs);
                         return redirect()->to('/');
                     }
                     else{
@@ -70,11 +70,11 @@ class LoginCon extends BaseController
             }
         }
         else{
-            $Data_system_logs=[
+            $Data_login_logs=[
                 'emp_id'=>$user,
                 'logs'=>'attempt to login : invalid account '.$ipaddress,
             ];
-            $SystemLogsMod->save($Data_system_logs);
+            $SystemLogsMod->save($Data_login_logs);
             session()->setFlashdata('noaccount','Invalid User Account');
             return redirect()->to('login');
         }
@@ -98,11 +98,11 @@ class LoginCon extends BaseController
         if(session()->has('loggedInEmp_Status')){
             session()->remove('loggedInEmp_Status');
         }
-        $Data_system_logs=[
+        $Data_login_logs=[
             'emp_id'=>$loggedInEmp_id,
             'logs'=>'logout '.$ipaddress,
         ];
-        $SystemLogsMod->save($Data_system_logs);
+        $SystemLogsMod->save($Data_login_logs);
         session()->setFlashdata('logout','You are logged out');
         return redirect()->to('login');
     }

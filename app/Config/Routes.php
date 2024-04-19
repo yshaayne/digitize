@@ -15,15 +15,25 @@ $routes->group('',['filter'=> 'AutoCheck'],function($routes){
     #########################################################################################################
     # Document ## Document ## Document ## Document ## Document ## Document ## Document ## Document #
     #########################################################################################################
-    $routes->get('document-setup', 'DocumentCon::index');
+    $routes->post('document-setup', 'DocumentCon::index');
     $routes->get('document-load', 'DocumentCon::load');
-    $routes->get('document-load2', 'DocumentCon::load2');
+    $routes->post('document-load2', 'DocumentCon::load2');
     $routes->post('document-add', 'DocumentCon::insert');
     $routes->post('document-details', 'DocumentCon::view');
     $routes->post('document-edit', 'DocumentCon::edit');
     $routes->post('document-update', 'DocumentCon::update');
     $routes->post('document-delete', 'DocumentCon::delete');
-
+    #########################################################################################################
+    # Document ## Document ## Document ## Document ## Document ## Document ## Document ## Document #
+    #########################################################################################################
+    $routes->get('folder-setup', 'FolderCon::index');
+    $routes->get('folder-load', 'FolderCon::load');
+    $routes->get('folder-load2', 'FolderCon::load2');
+    $routes->post('folder-add', 'FolderCon::insert');
+    $routes->post('folder-details', 'FolderCon::view');
+    $routes->post('folder-edit', 'FolderCon::edit');
+    $routes->post('folder-update', 'FolderCon::update');
+    $routes->post('folder-delete', 'FolderCon::delete');
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     $routes->get('home', 'DashboardCon::index2');
     $routes->get('my-profile', 'Dashboard::profile');
