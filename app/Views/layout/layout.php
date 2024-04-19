@@ -34,7 +34,9 @@ date_default_timezone_set('Asia/Hong_Kong');
             right: 0% !important;
             margin-bottom: 0 !important;   
         } 
-
+        #loading{
+            display:none;
+        }
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -50,9 +52,9 @@ date_default_timezone_set('Asia/Hong_Kong');
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-user"></i>
-                        <span >Profile</span>
+                    <a href="<?=site_url("/");?>" class="sidebar-link">
+                        <i class="lni lni-home"></i>
+                        <span >FILE MANAGER</span>
                     </a>
                 </li>
                
@@ -72,12 +74,12 @@ date_default_timezone_set('Asia/Hong_Kong');
                     </ul>
                 </li>
 
-                <li class="sidebar-item">
-                    <a href="<?=site_url("/");?>" class="sidebar-link">
+                <!-- <li class="sidebar-item">
+                    <a href="" class="sidebar-link">
                         <i class="lni lni-agenda"></i>
                         <span>File Manager</span>
                     </a>
-                </li>
+                </li> -->
 
                 <!-- <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
@@ -166,6 +168,11 @@ date_default_timezone_set('Asia/Hong_Kong');
             </nav>
             <main class="content px-3 py-4">
                 <div class="container-fluid">
+                    <div id="loading">
+                        <div class="row">
+                            <img id="loading-image" src="assets/img/giphy.gif" alt="Loading" />
+                        </div>
+                    </div>  
                     <div class="mb-3">
                     <?= $this->renderSection('content'); ?>
                       
