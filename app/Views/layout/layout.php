@@ -211,16 +211,17 @@ date_default_timezone_set('Asia/Hong_Kong');
     <div class="modal-dialog modal-sm">
         <form class="user"  action="logout" method="get">
         <div class="modal-content">
-            <div class="modal-header text-white" style="background-color:#0E2238;"><?//=site_url('logout');?>
-                <h5 class="modal-title" id="logoutModLabel">ISUC FMS</h5>
-                <button type="button" class="btn-close" style="color:#FFFFFF;" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header text-white" style="background-color:#0E2238;padding: 2px 15px 2px 5px;"><?//=site_url('logout');?>
+                <img src="<?=base_url('assets');?>/img/isu.png"  class="mr-4" alt="" width="17" height="17">
+                <span class="modal-title text-white" id="logoutModLongTitle">&nbsp;ISUC FMS</span>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Are you sure you want to log out?</p>
+                <small>Are you sure you want to log out?</small>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                <button type="submit" class="btn btn-primary">Yes</button>
+            <div class="modal-footer" style="padding: 2px 20px 2px 20px;">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">No</button>
+                <button type="submit" class="btn btn-primary btn-sm">Yes</button>
             </div>
         </div>
         </form>
@@ -242,6 +243,14 @@ date_default_timezone_set('Asia/Hong_Kong');
             //CKEditor 5
             ClassicEditor
                     .create( document.querySelector( '#editor1' ) )
+                    .then( editor => {
+                            console.log( editor );
+                    } )
+                    .catch( error => {
+                            // console.error( error );
+                    } );
+            ClassicEditor
+                    .create( document.querySelector( '#editor2' ) )
                     .then( editor => {
                             console.log( editor );
                     } )

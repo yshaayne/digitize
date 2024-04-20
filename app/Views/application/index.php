@@ -96,11 +96,11 @@
         <div class="modal fade " id="addModalCenter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  role="dialog" aria-labelledby="addModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog   modal-sm" role="document">
                 <div class="modal-content">
-                    <div class="modal-header" style="background-color:#0E2238;">
-                        <img src="<?=base_url('assets');?>/img/isu.png" class="mr-4" alt="" width="25" height="25">&nbsp;
+                    <div class="modal-header" style="background-color:#0E2238;padding: 2px 15px 2px 5px;">
+                        <img src="<?=base_url('assets');?>/img/isu.png" class="mr-4" alt="" width="17" height="17">&nbsp;
                         <span class="modal-title text-white" id="addModalLongTitle">CREATE FOLDER</span>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+                            <!-- <span aria-hidden="true">&times;</span> -->
                         </button>
                     </div>
                     <form class="form-add" id="form-add" action="#" method="POST" enctype="multipart/form-data"> 
@@ -114,7 +114,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
+                        <div class="modal-footer" style="padding: 2px 20px 2px 20px;">
                             <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal"><span class="fa fa-times"></span> CLOSE</button>
                             <button type="submit" class="btn btn-sm btn-outline-primary folder-save"><span class="fa fa-save"></span> SAVE</button>
                         </div>
