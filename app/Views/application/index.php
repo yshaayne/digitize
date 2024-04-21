@@ -76,9 +76,9 @@
         </h3>
         <div class="row">
             <div class="col-sm-12">
-                <button type="button" class="btn btn-sm btn-outline-primary float-end" data-bs-toggle="modal" data-bs-target="#addModalCenter">
+                <!-- <button type="button" class="btn btn-sm btn-outline-primary float-end" data-bs-toggle="modal" data-bs-target="#addModalCenter">
                     NEW FOLDER
-                </button>
+                </button> -->
             </div>
         </div>
         <div class="row list">
@@ -115,6 +115,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <small>Name :</small>
+                                        <input type="hidden" name="department_id" id="department_id">
                                         <input type="text" name="name" class="form-control" id="exampleInputUsername1" placeholder="Folder Name" required>                                                   
                                     </div>
                                 </div>
@@ -200,8 +201,11 @@
                             $('#addModalCenter').find('input').val('');
                             $('.list').html('');
                             $('#form-add')[0].reset();
-                            displayFolder();
-                            //alert(response.status);
+                            <?php
+                                if($loggedInAccessLevel==1){ ?>  displayFolderAdmin();<?php } 
+                                else if($loggedInDeptHead > 0){ ?> displayFolderHead();displayFolder2();<?php }   
+                                else{ ?> displayFolder();<?php } 
+                            ?>
                             $('#addModalCenter').modal('hide');
                         }  
                     }
