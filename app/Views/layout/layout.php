@@ -241,24 +241,37 @@ date_default_timezone_set('Asia/Hong_Kong');
 
     <script>
             //CKEditor 5
-            ClassicEditor
-                    .create( document.querySelector( '#editor1' ) )
-                    .then( editor => {
-                            console.log( editor );
-                    } )
-                    .catch( error => {
-                            // console.error( error );
-                    } );
-            ClassicEditor
-                    .create( document.querySelector( '#editor2' ) )
-                    .then( editor => {
-                            console.log( editor );
-                    } )
-                    .catch( error => {
-                            // console.error( error );
-                    } );
+            // ClassicEditor
+            //         .create( document.querySelector( '#editor1' ) )
+            //         .then( editor => {
+            //                 console.log( editor );
+            //         } )
+            //         .catch( error => {
+            //                 // console.error( error );
+            //         } );
+            // ClassicEditor
+            //         .create( document.querySelector( '#editor2' ) , {
+            //             // List of HTML Elements to be allowed
+            //             htmlSupport: {
+            //                 allow: [
+            //                     {
+            //                         name: /.*/,     // Allows all element
+            //                         attributes: true,       // Allows all attributes
+            //                         classes: true,      // Allows all classes
+            //                         styles: true        // Allows all inline-css styles
+            //                     }
+            //                 ]
+            //             }
+            //         })
+            //         .then( editor => {
+            //                 console.log( editor );
+            //         } )
+            //         .catch( error => {
+            //                 // console.error( error );
+            //         } );
             //CKEditor 4   
             //CKEDITOR.replace( 'editor1' );
+           
     </script>
     <style>
         /* #uploadForm label {
