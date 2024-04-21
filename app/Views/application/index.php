@@ -115,7 +115,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <small>Name :</small>
-                                        <input type="hidden" name="department_id" id="department_id">
+                                        <input type="hidden" name="department_id" id="department_id" >
                                         <input type="text" name="name" class="form-control" id="exampleInputUsername1" placeholder="Folder Name" required>                                                   
                                     </div>
                                 </div>
