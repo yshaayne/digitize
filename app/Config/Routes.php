@@ -29,6 +29,8 @@ $routes->group('',['filter'=> 'AutoCheck'],function($routes){
     $routes->get('folder-setup', 'FolderCon::index');
     $routes->get('folder-load', 'FolderCon::load');
     $routes->get('folder-load2', 'FolderCon::load2');
+    $routes->get('folder-load3', 'FolderCon::load3');
+    $routes->get('folder-load4', 'FolderCon::load4');
     $routes->post('folder-add', 'FolderCon::insert');
     $routes->post('folder-details', 'FolderCon::view');
     $routes->post('folder-edit', 'FolderCon::edit');

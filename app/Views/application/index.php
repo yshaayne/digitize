@@ -2,12 +2,14 @@
     echo $this->extend('layout/layout');
     echo $this->section('content');
     date_default_timezone_set('Asia/Hong_Kong');
+    $loggedInAccessLevel = session()->get('loggedInAccessLevel');
+    $loggedInDeptHead = session()->get('loggedInDeptHead');
     // $db = \Config\Database::connect();
     // $db_ticket = \Config\Database::connect("ticket");
     //====================================================================================
     ?>
-        <h3 class="fw-bold fs-4 mb-3">INFORMATION</h3>
-        <div class="row">
+        <span style="font-size:16pt;color:#0E2238;">Hi, <?=$userInfo["fname"];?> <?=$userInfo["sname"];?></span>
+        <div class="row" style="display:none;">
             <div class="col-12 col-md-4 ">
                 <div class="card border-0">
                     <div class="card-body py-4">
@@ -82,12 +84,16 @@
         <div class="row list">
            
         </div>
+        <div class="row list2">
+           
+        </div>
+        <!-- ############################################################################################################################# -->
 
-
+        <!-- ############################################################################################################################# -->
         <h3 class="fw-bold fs-4 my-3 mt-5">Shared Folder
         </h3>
       
-        <div class="row list2">
+        <div class="row list3">
            
         </div>
         <!-- ############################################################################################################################# -->
@@ -140,9 +146,38 @@
                 }
             });
         }
+        function displayFolder2(){
+            $.ajax({
+                url: "folder-load2",
+                dataType:"json",
+                success: function (response) {
+                    $('.list2').html(response.dataFolder);
+                }
+            });
+        }
+        function displayFolderAdmin(){
+            $.ajax({
+                url: "folder-load3",
+                dataType:"json",
+                success: function (response) {
+                    $('.list').html(response.dataFolder);
+                }
+            });
+        }
+        function displayFolderHead(){
+            $.ajax({
+                url: "folder-load4",
+                dataType:"json",
+                success: function (response) {
+                    $('.list').html(response.dataFolder);
+                }
+            });
+        }
         $(document).ready(function () {
-
-            displayFolder();
+            <?php
+            if($loggedInAccessLevel==1){ ?>  displayFolderAdmin();<?php } 
+            else if($loggedInDeptHead > 0){ ?> displayFolderHead();displayFolder2();<?php }   
+            else{ ?> displayFolder();<?php } ?>
             //INSERT
             $("#form-add").on('submit',(function(e) {
                 e.preventDefault();

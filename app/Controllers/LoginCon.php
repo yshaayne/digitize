@@ -7,7 +7,7 @@ use App\Libraries\Hash;
 use App\Models\User;
 use App\Models\EmploymentDetailsMod;
 use App\Models\SystemLogsMod;
-
+use App\Models\DepartmentMod;
 class LoginCon extends BaseController
 {
     //FORM
@@ -26,6 +26,10 @@ class LoginCon extends BaseController
         //checking user details in database
         $user=$this->request->getPost('user');//from form
         $pass=$this->request->getPost('pass');//from form
+        $departmentMod = new DepartmentMod();
+        $departmentInfo= $departmentMod->where('depthead',$user)->findAll();
+        $departmentInfo_count=0;
+        foreach($departmentInfo as $departmentInfo_row){$departmentInfo_count++;}
         $userModel = new User();
         $employeeModel = new EmploymentDetailsMod();
         $userInfo= $userModel->where('user',$user)->first();
@@ -45,12 +49,14 @@ class LoginCon extends BaseController
                 if($userInfo['status']==1){
                     $employeeInfo= $employeeModel->where('emp_id',$userInfo['emp_id'])->first();
                     $userId=$userInfo['id'];
-                    $employeeInfo= $employeeModel->where('emp_id',$userInfo['emp_id'])->first();
+
                     if($employeeInfo){
                         session()->set('loggedInUser',$userId);
                         session()->set('loggedInEmp_id',$userInfo['emp_id']);
                         session()->set('loggedInAccessLevel',$userInfo['accesslevel']);
                         session()->set('loggedInEmp_Status',$employeeInfo['status']);
+                        session()->set('loggedInDept',$employeeInfo['department']);
+                        session()->set('loggedInDeptHead',$departmentInfo_count);
                         $Data_login_logs=[
                             'emp_id'=>$userInfo['emp_id'],
                             'logs'=>'login '.$ipaddress,
@@ -98,6 +104,13 @@ class LoginCon extends BaseController
         if(session()->has('loggedInEmp_Status')){
             session()->remove('loggedInEmp_Status');
         }
+        if(session()->has('loggedInDept')){
+            session()->remove('loggedInDept');
+        }
+        if(session()->has('loggedInDeptHead')){
+            session()->remove('loggedInDeptHead');
+        }
+        
         $Data_login_logs=[
             'emp_id'=>$loggedInEmp_id,
             'logs'=>'logout '.$ipaddress,
