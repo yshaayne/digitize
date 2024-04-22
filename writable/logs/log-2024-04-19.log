@@ -1,0 +1,141 @@
+CRITICAL - 2024-04-19 01:33:46 --> Error: Class 'App\Controllers\SystemLogsMod' not found
+in APPPATH\Controllers\DocumentCon.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 01:34:05 --> Error: Class 'App\Controllers\SystemLogsMod' not found
+in APPPATH\Controllers\DocumentCon.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 01:34:24 --> Error: Class 'App\Controllers\SystemLogsMod' not found
+in APPPATH\Controllers\DocumentCon.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 03:45:09 --> ParseError: syntax error, unexpected '?>'
+in APPPATH\Views\application\documentList.php on line 39.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 3 APPPATH\Controllers\DocumentCon.php(36): view('application/documentList', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 03:45:13 --> ParseError: syntax error, unexpected '?>'
+in APPPATH\Views\application\documentList.php on line 39.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 3 APPPATH\Controllers\DocumentCon.php(36): view('application/documentList', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:08:13 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\application\index.php on line 99.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/index', [], true)
+ 3 APPPATH\Controllers\DashboardCon.php(29): view('application/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DashboardCon->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:08:38 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\application\index.php on line 99.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/index', [], true)
+ 3 APPPATH\Controllers\DashboardCon.php(29): view('application/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DashboardCon->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:08:42 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\application\index.php on line 99.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/index', [], true)
+ 3 APPPATH\Controllers\DashboardCon.php(29): view('application/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DashboardCon->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:08:55 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\application\index.php on line 99.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/index', [], true)
+ 3 APPPATH\Controllers\DashboardCon.php(29): view('application/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DashboardCon->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 06:09:14 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\application\index.php on line 99.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/index', [], true)
+ 3 APPPATH\Controllers\DashboardCon.php(29): view('application/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DashboardCon->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 07:29:09 --> ErrorException: move_uploaded_file(folder_root/x/VOUCHER_SIR_ROSARIO_1713511750.pdf): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folder_root/x/VOUCHER_SIR_ROSARIO_1713511750.pdf): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 65, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(65): move_uploaded_file('C:\\xampp\\tmp\\php5218.tmp', 'folder_root/x/VOUCHER_SIR_ROSARIO_1713511750.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 07:35:39 --> Error: Class 'App\Controllers\FolderMod' not found
+in APPPATH\Controllers\DocumentCon.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 07:39:38 --> ErrorException: move_uploaded_file(folder_root/.folder 1./VOUCHER_SIR_ROSARIO_1713512379.pdf): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 69.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folder_root/.folder 1./VOUCHER_SIR_ROSARIO_1713512379.pdf): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 69, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(69): move_uploaded_file('C:\\xampp\\tmp\\phpEA95.tmp', 'folder_root/.folder 1./VOUCHER_SIR_ROSARIO_1713512379.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 07:39:52 --> ErrorException: move_uploaded_file(folder_root/.folder 1./VOUCHER_SIR_ROSARIO_1713512393.pdf): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 69.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folder_root/.folder 1./VOUCHER_SIR_ROSARIO_1713512393.pdf): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 69, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(69): move_uploaded_file('C:\\xampp\\tmp\\php21B4.tmp', 'folder_root/.folder 1./VOUCHER_SIR_ROSARIO_1713512393.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 07:43:47 --> ErrorException: move_uploaded_file(folder_root/.folder1./VOUCHER_SIR_ROSARIO_1713512628.pdf): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 69.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folder_root/.folder1./VOUCHER_SIR_ROSARIO_1713512628.pdf): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 69, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(69): move_uploaded_file('C:\\xampp\\tmp\\phpB7CC.tmp', 'folder_root/.folder1./VOUCHER_SIR_ROSARIO_1713512628.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 08:11:00 --> ErrorException: Illegal string offset 'folder_name'
+in APPPATH\Views\application\documentList.php on line 21.
+ 1 APPPATH\Views\application\documentList.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'folder_name\'', 'C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\documentList.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\documentList.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 5 APPPATH\Controllers\DocumentCon.php(44): view('application/documentList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 08:12:35 --> ErrorException: Illegal string offset 'folder_name'
+in APPPATH\Views\application\documentList.php on line 8.
+ 1 APPPATH\Views\application\documentList.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'folder_name\'', 'C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\documentList.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\documentList.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 5 APPPATH\Controllers\DocumentCon.php(44): view('application/documentList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

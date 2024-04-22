@@ -1,0 +1,535 @@
+CRITICAL - 2024-04-21 08:43:12 --> LogicException: No validation rules for the placeholder: "edit_doc_id". You must set the validation rules for the field. See <https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders>.
+in SYSTEMPATH\Validation\Validation.php on line 792.
+ 1 SYSTEMPATH\Validation\Validation.php(157): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\DocumentCon.php(125): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 08:43:14 --> LogicException: No validation rules for the placeholder: "edit_doc_id". You must set the validation rules for the field. See <https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders>.
+in SYSTEMPATH\Validation\Validation.php on line 792.
+ 1 SYSTEMPATH\Validation\Validation.php(157): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\DocumentCon.php(125): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 08:43:14 --> LogicException: No validation rules for the placeholder: "edit_doc_id". You must set the validation rules for the field. See <https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders>.
+in SYSTEMPATH\Validation\Validation.php on line 792.
+ 1 SYSTEMPATH\Validation\Validation.php(157): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\DocumentCon.php(125): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 08:43:15 --> LogicException: No validation rules for the placeholder: "edit_doc_id". You must set the validation rules for the field. See <https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders>.
+in SYSTEMPATH\Validation\Validation.php on line 792.
+ 1 SYSTEMPATH\Validation\Validation.php(157): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\DocumentCon.php(125): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 08:43:15 --> LogicException: No validation rules for the placeholder: "edit_doc_id". You must set the validation rules for the field. See <https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders>.
+in SYSTEMPATH\Validation\Validation.php on line 792.
+ 1 SYSTEMPATH\Validation\Validation.php(157): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\DocumentCon.php(125): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 08:43:56 --> LogicException: No validation rules for the placeholder: "edit_doc_id". You must set the validation rules for the field. See <https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders>.
+in SYSTEMPATH\Validation\Validation.php on line 792.
+ 1 SYSTEMPATH\Validation\Validation.php(157): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\DocumentCon.php(125): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 08:49:22 --> LogicException: No validation rules for the placeholder: "edit_doc_id". You must set the validation rules for the field. See <https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders>.
+in SYSTEMPATH\Validation\Validation.php on line 792.
+ 1 SYSTEMPATH\Validation\Validation.php(157): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\DocumentCon.php(125): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 09:02:47 --> LogicException: No validation rules for the placeholder: "edit_doc_id". You must set the validation rules for the field. See <https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders>.
+in SYSTEMPATH\Validation\Validation.php on line 792.
+ 1 SYSTEMPATH\Validation\Validation.php(157): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\DocumentCon.php(125): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 11:49:38 --> Error: Class 'App\Controllers\EmploymentDetailsMod' not found
+in APPPATH\Controllers\DocumentCon.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 11:52:14 --> Error: Class 'App\Controllers\EmploymentDetailsMod' not found
+in APPPATH\Controllers\DocumentCon.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 11:52:24 --> Error: Class 'App\Controllers\EmploymentDetailsMod' not found
+in APPPATH\Controllers\DocumentCon.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->update()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:05:42 --> Error: Call to a member function table() on null
+in APPPATH\Views\application\folderList.php on line 8.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 4 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-21 12:06:09 --> mysqli_sql_exception: Unknown column 'folder' in 'where clause' in C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\digitize\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\digitize\app\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\digitize\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\digitize\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\digitize\system\Common.php(1178): CodeIgniter\View\View->render('application/fol...', Array, true)
+#8 C:\xampp\htdocs\digitize\app\Controllers\FolderCon.php(41): view('application/fol...', Array)
+#9 C:\xampp\htdocs\digitize\system\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+#10 C:\xampp\htdocs\digitize\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+#11 C:\xampp\htdocs\digitize\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\digitize\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-21 12:06:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 2 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 6 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:06:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 4 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 8 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:06:09 --> [Caused by] mysqli_sql_exception: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 5 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 9 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-21 12:06:11 --> mysqli_sql_exception: Unknown column 'folder' in 'where clause' in C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\digitize\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\digitize\app\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\digitize\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\digitize\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\digitize\system\Common.php(1178): CodeIgniter\View\View->render('application/fol...', Array, true)
+#8 C:\xampp\htdocs\digitize\app\Controllers\FolderCon.php(41): view('application/fol...', Array)
+#9 C:\xampp\htdocs\digitize\system\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+#10 C:\xampp\htdocs\digitize\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+#11 C:\xampp\htdocs\digitize\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\digitize\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-21 12:06:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 2 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 6 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:06:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 4 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 8 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:06:11 --> [Caused by] mysqli_sql_exception: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 5 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 9 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-21 12:06:37 --> mysqli_sql_exception: Unknown column 'folder' in 'where clause' in C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\digitize\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\digitize\app\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\digitize\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\digitize\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\digitize\system\Common.php(1178): CodeIgniter\View\View->render('application/fol...', Array, true)
+#8 C:\xampp\htdocs\digitize\app\Controllers\FolderCon.php(41): view('application/fol...', Array)
+#9 C:\xampp\htdocs\digitize\system\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+#10 C:\xampp\htdocs\digitize\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+#11 C:\xampp\htdocs\digitize\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\digitize\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-21 12:06:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 2 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 6 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:06:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 4 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 8 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:06:37 --> [Caused by] mysqli_sql_exception: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 5 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 9 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-21 12:06:40 --> mysqli_sql_exception: Unknown column 'folder' in 'where clause' in C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\digitize\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\digitize\app\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\digitize\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\digitize\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\digitize\system\Common.php(1178): CodeIgniter\View\View->render('application/fol...', Array, true)
+#8 C:\xampp\htdocs\digitize\app\Controllers\FolderCon.php(41): view('application/fol...', Array)
+#9 C:\xampp\htdocs\digitize\system\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+#10 C:\xampp\htdocs\digitize\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+#11 C:\xampp\htdocs\digitize\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\digitize\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-21 12:06:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 2 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 6 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:06:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 4 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 8 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:06:40 --> [Caused by] mysqli_sql_exception: Unknown column 'folder' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documents`
+WHERE `folder` = \'66\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documents`
+WHERE `folder` = :folder:', [...], false)
+ 5 APPPATH\Views\application\folderList.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\digitize\\app\\Views\\application\\folderList.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 9 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:07:35 --> Error: Call to a member function table() on null
+in APPPATH\Views\application\folderList.php on line 9.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 4 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:07:37 --> Error: Call to a member function table() on null
+in APPPATH\Views\application\folderList.php on line 9.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 4 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:09:53 --> Error: Call to a member function table() on null
+in APPPATH\Views\application\folderList.php on line 9.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 4 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:09:55 --> Error: Call to a member function table() on null
+in APPPATH\Views\application\folderList.php on line 9.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList', [], true)
+ 4 APPPATH\Controllers\FolderCon.php(41): view('application/folderList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:33:44 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\application\documentList.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 4 APPPATH\Controllers\DocumentCon.php(47): view('application/documentList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:33:49 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\application\documentList.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 4 APPPATH\Controllers\DocumentCon.php(47): view('application/documentList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:42:20 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\application\documentList.php on line 43.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 4 APPPATH\Controllers\DocumentCon.php(47): view('application/documentList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:42:31 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\application\documentList.php on line 43.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 4 APPPATH\Controllers\DocumentCon.php(47): view('application/documentList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:42:36 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\application\documentList.php on line 43.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 4 APPPATH\Controllers\DocumentCon.php(47): view('application/documentList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:42:38 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\application\documentList.php on line 43.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 4 APPPATH\Controllers\DocumentCon.php(47): view('application/documentList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 12:47:38 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\application\documentList.php on line 45.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/documentList', [], true)
+ 4 APPPATH\Controllers\DocumentCon.php(47): view('application/documentList', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->load2()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 13:47:22 --> ParseError: syntax error, unexpected '}', expecting end of file
+in APPPATH\Views\application\folderList2.php on line 35.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('application/folderList2', [], true)
+ 3 APPPATH\Controllers\FolderCon.php(58): view('application/folderList2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\FolderCon->load3()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FolderCon))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 16:23:20 --> ErrorException: move_uploaded_file(folder_root//new 1/sample_1713716600.pptx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 81.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folder_root//new 1/sample_1713716600.pptx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 81, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(81): move_uploaded_file('C:\\xampp\\tmp\\phpECE.tmp', 'folder_root//new 1/sample_1713716600.pptx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 16:25:45 --> ErrorException: move_uploaded_file(folder_root//new 1/sample_1713716745.pptx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 81.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folder_root//new 1/sample_1713716745.pptx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 81, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(81): move_uploaded_file('C:\\xampp\\tmp\\php4527.tmp', 'folder_root//new 1/sample_1713716745.pptx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-21 16:26:32 --> ErrorException: move_uploaded_file(folder_root/0/new 1/sample_1713716793.pptx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 81.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folder_root/0/new 1/sample_1713716793.pptx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 81, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(81): move_uploaded_file('C:\\xampp\\tmp\\phpFE37.tmp', 'folder_root/0/new 1/sample_1713716793.pptx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

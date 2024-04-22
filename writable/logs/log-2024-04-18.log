@@ -1,0 +1,485 @@
+ERROR - 2024-04-18 07:58:04 --> mysqli_sql_exception: Table 'fms.tbldocument' doesn't exist in C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\digitize\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\digitize\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\digitize\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(NULL, 'code', Array, NULL, 'code')
+#6 C:\xampp\htdocs\digitize\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', NULL, Array, Array)
+#7 C:\xampp\htdocs\digitize\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\digitize\app\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\digitize\system\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+#10 C:\xampp\htdocs\digitize\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+#11 C:\xampp\htdocs\digitize\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\digitize\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-18 07:58:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 5 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 07:58:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 7 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 07:58:04 --> [Caused by] mysqli_sql_exception: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 8 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-18 07:58:42 --> mysqli_sql_exception: Table 'fms.tbldocument' doesn't exist in C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\digitize\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\digitize\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\digitize\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(NULL, 'code', Array, NULL, 'code')
+#6 C:\xampp\htdocs\digitize\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', NULL, Array, Array)
+#7 C:\xampp\htdocs\digitize\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\digitize\app\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\digitize\system\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+#10 C:\xampp\htdocs\digitize\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+#11 C:\xampp\htdocs\digitize\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\digitize\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-18 07:58:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 5 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 07:58:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 7 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 07:58:42 --> [Caused by] mysqli_sql_exception: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 8 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-18 08:03:29 --> mysqli_sql_exception: Table 'fms.tbldocument' doesn't exist in C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\digitize\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\digitize\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\digitize\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(NULL, 'code', Array, NULL, 'code')
+#6 C:\xampp\htdocs\digitize\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', NULL, Array, Array)
+#7 C:\xampp\htdocs\digitize\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\digitize\app\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\digitize\system\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+#10 C:\xampp\htdocs\digitize\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+#11 C:\xampp\htdocs\digitize\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\digitize\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-18 08:03:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 5 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 08:03:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 7 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 08:03:29 --> [Caused by] mysqli_sql_exception: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 8 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-18 08:03:38 --> mysqli_sql_exception: Table 'fms.tbldocument' doesn't exist in C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\digitize\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\digitize\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\digitize\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(NULL, 'code', Array, NULL, 'code')
+#6 C:\xampp\htdocs\digitize\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', NULL, Array, Array)
+#7 C:\xampp\htdocs\digitize\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\digitize\app\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\digitize\system\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+#10 C:\xampp\htdocs\digitize\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+#11 C:\xampp\htdocs\digitize\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\digitize\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-18 08:03:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 5 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 08:03:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 7 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 08:03:38 --> [Caused by] mysqli_sql_exception: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 8 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-18 08:03:41 --> mysqli_sql_exception: Table 'fms.tbldocument' doesn't exist in C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\digitize\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\digitize\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\digitize\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\digitize\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\digitize\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(NULL, 'code', Array, NULL, 'code')
+#6 C:\xampp\htdocs\digitize\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', NULL, Array, Array)
+#7 C:\xampp\htdocs\digitize\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\digitize\app\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\digitize\system\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+#10 C:\xampp\htdocs\digitize\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+#11 C:\xampp\htdocs\digitize\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\digitize\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-18 08:03:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 5 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 08:03:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 7 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 08:03:41 --> [Caused by] mysqli_sql_exception: Table 'fms.tbldocument' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tblDocument`
+WHERE `code` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique(null, 'code', [...], null, 'code')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('code', 'code', null, [...], [...])
+ 8 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\DocumentCon.php(44): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 11:37:56 --> ErrorException: move_uploaded_file(folders_list/x/ANNEX A.docx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 66.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folders_list/x/ANNEX A.docx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 66, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(66): move_uploaded_file('C:\\xampp\\tmp\\phpB9D5.tmp', 'folders_list/x/ANNEX A.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 11:38:13 --> ErrorException: move_uploaded_file(folders_list/x/ANNEX A.docx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 66.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folders_list/x/ANNEX A.docx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 66, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(66): move_uploaded_file('C:\\xampp\\tmp\\phpFD09.tmp', 'folders_list/x/ANNEX A.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 11:41:06 --> ErrorException: move_uploaded_file(http://localhost/folders_list/x/ANNEX A.docx): failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\DocumentCon.php on line 66.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(http://localhost/folders_list/x/ANNEX A.docx): failed to open stream: HTTP wrapper does not support writeable connections', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 66, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(66): move_uploaded_file('C:\\xampp\\tmp\\php9E71.tmp', 'http://localhost/folders_list/x/ANNEX A.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 12:06:24 --> ErrorException: move_uploaded_file(folders_list/x/ANNEX A.docx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 66.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folders_list/x/ANNEX A.docx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 66, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(66): move_uploaded_file('C:\\xampp\\tmp\\phpC8FD.tmp', 'folders_list/x/ANNEX A.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 12:37:22 --> ErrorException: move_uploaded_file(folders_list/x/ANNEX A.docx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 66.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folders_list/x/ANNEX A.docx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 66, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(66): move_uploaded_file('C:\\xampp\\tmp\\php24C2.tmp', 'folders_list/x/ANNEX A.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 12:56:55 --> ErrorException: move_uploaded_file(folders_list/x/ANNEX A_1713445015.docx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folders_list/x/ANNEX A_1713445015.docx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 74, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(74): move_uploaded_file('C:\\xampp\\tmp\\php8D7.tmp', 'folders_list/x/ANNEX A_1713445015.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 12:56:57 --> ErrorException: move_uploaded_file(folders_list/x/ANNEX A_1713445017.docx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folders_list/x/ANNEX A_1713445017.docx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 74, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(74): move_uploaded_file('C:\\xampp\\tmp\\phpFCD.tmp', 'folders_list/x/ANNEX A_1713445017.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 12:59:40 --> ErrorException: move_uploaded_file(folders_list/x/ANNEX A_1713445181.docx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folders_list/x/ANNEX A_1713445181.docx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 76, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(76): move_uploaded_file('C:\\xampp\\tmp\\php8F26.tmp', 'folders_list/x/ANNEX A_1713445181.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 13:02:42 --> ErrorException: move_uploaded_file(folder_list/x/ANNEX A_1713445363.docx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folder_list/x/ANNEX A_1713445363.docx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 76, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(76): move_uploaded_file('C:\\xampp\\tmp\\php554D.tmp', 'folder_list/x/ANNEX A_1713445363.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 13:43:50 --> ErrorException: move_uploaded_file(folder_list/x/ANNEX A_1713447830.docx): failed to open stream: No such file or directory
+in APPPATH\Controllers\DocumentCon.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(folder_list/x/ANNEX A_1713447830.docx): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\digitize\\app\\Controllers\\DocumentCon.php', 76, [...])
+ 2 APPPATH\Controllers\DocumentCon.php(76): move_uploaded_file('C:\\xampp\\tmp\\phpFBAC.tmp', 'folder_list/x/ANNEX A_1713447830.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DocumentCon->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentCon))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
